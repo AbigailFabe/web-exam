@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<style>
+    #tblrecords td{
+        font-weight: bold;
+        border: solid 1px black;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+<body>
+    <h1>Javacript Web Output Exam</h1>
+    <fieldset>
+
+        <table>
+            <legend>Full Name</legend>
+            <tr>
+                <td width="45%">
+                    <label for="">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="firstname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Middle Name :</label>
+                </td>
+                <td>
+                    <input type="text" id="middlename">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Last Name :</label>
+                </td>
+                <td>
+                    <input type="text" id="lastname">
+                </td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <table>
+            <legend>Subject Grades</legend>
+            <tr>
+                <td width="45%">
+                    <label for="">OOP :</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="oop">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Networking :</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="networking">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Web Technology :</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="webtech">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Research :</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="research">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">AIS 2 :</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="ais">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <button onclick="pushInformation()">Insert</button>
+    <button onclick="clearInput()">Clear</button>
+
+    <fieldset>
+        <legend>Records</legend>
+        <table id="tblrecords" style="border-collapse: collapse; margin: auto;">
+            <tr>
+                <td>First Name</td>
+                <td>Middle Name</td>
+                <td>Last Name</td>
+                <td>OOP</td>
+                <td>Networking</td>
+                <td>Web Technology</td>
+                <td>Research</td>
+                <td>AIS 2</td>
+                <td>Average</td>
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <button onclick="clearGrades()">Clear Grades</button>
+
+</body>
+
+</html>
